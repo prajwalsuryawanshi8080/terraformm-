@@ -1,11 +1,11 @@
 provider "aws" {
-  region = "us-west-1"
+  region = "ap-south-1"
 }
 
 
 
 resource "aws_iam_role" "eks_cluster_role" {
-  name = "eks-cluster-role-cdec-b4"
+  name = "eks-cluster-role-cdec"
   assume_role_policy = jsonencode({
     "Version": "2012-10-17",
     "Statement": [
